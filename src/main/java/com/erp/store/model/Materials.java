@@ -24,22 +24,6 @@ public class Materials {
     String remaining;
     String productionDays;
 	
-	public Materials(int id,String productName, String itemName, String supplierName, int quantity, String recurrent,
-			String remaining, String productionDays) {
-		super();
-		this.id=id;
-		this.productName = productName;
-		this.itemName = itemName;
-		this.supplierName = supplierName;
-		this.quantity = quantity;
-		this.recurrent = recurrent;
-		this.remaining = remaining;
-		this.productionDays = productionDays;
-	}
-	public Materials() {
-		super();
-	}
-	
 	public int getId() {
 		return id;
 	}
