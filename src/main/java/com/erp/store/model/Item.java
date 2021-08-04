@@ -1,17 +1,15 @@
 package com.erp.store.model;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
+import org.hibernate.annotations.Entity;
 
-@Entity 
-@Table(name = "ITEM")
+@Entity
 public class Item {
 	@Id
-    @GeneratedValue
-    int id;
+	@GeneratedValue
+	int id;
 	String itemName;
 	int quantity;
 	String unit;
@@ -20,12 +18,6 @@ public class Item {
 	String subCategory;
 	long hsnNumber;
 	String supplierName;
-	public String getSupplierName() {
-		return supplierName;
-	}
-	public void setSupplierName(String supplierName) {
-		this.supplierName = supplierName;
-	}
 	public int getId() {
 		return id;
 	}
@@ -74,13 +66,17 @@ public class Item {
 	public void setHsnNumber(long hsnNumber) {
 		this.hsnNumber = hsnNumber;
 	}
+	public String getSupplierName() {
+		return supplierName;
+	}
+	public void setSupplierName(String supplierName) {
+		this.supplierName = supplierName;
+	}
 	@Override
 	public String toString() {
 		return "Item [id=" + id + ", itemName=" + itemName + ", quantity=" + quantity + ", unit=" + unit + ", barCode="
 				+ barCode + ", category=" + category + ", subCategory=" + subCategory + ", hsnNumber=" + hsnNumber
 				+ ", supplierName=" + supplierName + "]";
 	}
-	
-
 	
 }

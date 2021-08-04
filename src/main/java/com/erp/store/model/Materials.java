@@ -1,17 +1,11 @@
 package com.erp.store.model;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Entity 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Table(name = "MATERIAL")
+
+@Entity
 public class Materials {
 	@Id
 	@GeneratedValue
@@ -23,7 +17,6 @@ public class Materials {
    String recurrent;
     String remaining;
     String productionDays;
-	
 	public int getId() {
 		return id;
 	}
@@ -74,10 +67,10 @@ public class Materials {
 	}
 	@Override
 	public String toString() {
-		return "Materials [productName=" + productName + ", itemName=" + itemName + ", supplierName=" + supplierName
-				+ ", quantity=" + quantity + ", recurrent=" + recurrent + ", remaining=" + remaining
+		return "Materials [id=" + id + ", productName=" + productName + ", itemName=" + itemName + ", supplierName="
+				+ supplierName + ", quantity=" + quantity + ", recurrent=" + recurrent + ", remaining=" + remaining
 				+ ", productionDays=" + productionDays + "]";
 	}
-	
-
+    
+    
 }

@@ -1,33 +1,20 @@
 package com.erp.store.model;
 
 import java.util.Arrays;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-
-
-@Table(name = "PRODUCT")
-
 public class Product {
 	@Id
     @GeneratedValue
     int id;
-	
 	String productName;
 	int productQuantity;
 	String itemsName[];
 	String itemsQuantity[];
-	
-	
 	public int getId() {
 		return id;
 	}
@@ -60,8 +47,10 @@ public class Product {
 	}
 	@Override
 	public String toString() {
-		return "Product [productName=" + productName + ", productQuantity=" + productQuantity + ", itemsName="
-				+ Arrays.toString(itemsName) + ", itemsQuantity=" + Arrays.toString(itemsQuantity) + "]";
+		return "Product [id=" + id + ", productName=" + productName + ", productQuantity=" + productQuantity
+				+ ", itemsName=" + Arrays.toString(itemsName) + ", itemsQuantity=" + Arrays.toString(itemsQuantity)
+				+ "]";
 	}
-
+	
+	
 }
