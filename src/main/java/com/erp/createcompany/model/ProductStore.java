@@ -1,4 +1,4 @@
-package com.erp.store.model;
+package com.erp.createcompany.model;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Product {
+public class ProductStore {
 	@Id
     @GeneratedValue
     int id;
@@ -47,10 +47,9 @@ public class Product {
 	}
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", productName=" + productName + ", productQuantity=" + productQuantity
+		return "ProductStore [id=" + id + ", productName=" + productName + ", productQuantity=" + productQuantity
 				+ ", itemsName=" + Arrays.toString(itemsName) + ", itemsQuantity=" + Arrays.toString(itemsQuantity)
 				+ "]";
 	}
-	
 	
 }

@@ -1,4 +1,4 @@
-package com.erp.store.model;
+package com.erp.createcompany.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
