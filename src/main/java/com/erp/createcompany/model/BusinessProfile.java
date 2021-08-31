@@ -17,6 +17,8 @@ public class BusinessProfile {
 	private String businessType;
 	private String businessCategory;
 	private String logo;
+	private String state;
+	
 	public String getBusinessName() {
 		return businessName;
 	}
@@ -71,12 +73,19 @@ public class BusinessProfile {
 	public void setLogo(String logo) {
 		this.logo = logo;
 	}
+	
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
 	@Override
 	public String toString() {
-		return "BusinessProfile [businessName=" + businessName + ", phoneNo=" + phoneNo + ", emailID=" + emailID
-				+ ", businessAddress=" + businessAddress + ", businessDescription=" + businessDescription + ", gstn="
-				+ gstn + ", businessType=" + businessType + ", businessCategory=" + businessCategory + ", logo=" + logo
-				+ "]";
+		return "BusinessProfile [busniessID=" + busniessID + ", businessName=" + businessName + ", phoneNo=" + phoneNo
+				+ ", emailID=" + emailID + ", businessAddress=" + businessAddress + ", businessDescription="
+				+ businessDescription + ", gstn=" + gstn + ", businessType=" + businessType + ", businessCategory="
+				+ businessCategory + ", logo=" + logo + ", state=" + state + "]";
 	}
 	
 }
