@@ -11,7 +11,6 @@ import javax.persistence.OneToMany;
 @Entity
 public class Units {
 	@Id
-	@GeneratedValue
 	private int Id;
 	private String name;
 	private String sname;

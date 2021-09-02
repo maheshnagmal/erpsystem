@@ -8,11 +8,10 @@ import javax.persistence.ManyToOne;
 @Entity
 public class ConversionRate {
 	@Id
-	@GeneratedValue
+	
 	private int id;
 	private String baseUnit;
 	private String scondaryUnit;
-	
 	@ManyToOne
 	private Units unit;
 	
