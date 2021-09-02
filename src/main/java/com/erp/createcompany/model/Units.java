@@ -15,7 +15,8 @@ public class Units {
 	private int Id;
 	private String name;
 	private String sname;
-	@OneToMany
+	
+	@OneToMany(mappedBy = "unit")
 	private List<ConversionRate> rate;
 	public int getId() {
 		return Id;

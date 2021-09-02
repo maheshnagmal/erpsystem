@@ -3,6 +3,7 @@ package com.erp.createcompany.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class ConversionRate {
@@ -11,7 +12,10 @@ public class ConversionRate {
 	private int id;
 	private String baseUnit;
 	private String scondaryUnit;
-
+	
+	@ManyToOne
+	private Units unit;
+	
 	public int getId() {
 		return id;
 	}
